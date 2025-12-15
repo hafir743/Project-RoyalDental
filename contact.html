@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Royal Dental</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="royaldental.png" alt="Royal Dental Logo" style="width: 150px; height: auto;">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="About-us.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="#appointment" class="btn-book-nav">Send a Case</a></li>
+                </ul>
+                <a href="login.html" class="user-icon-btn" aria-label="Login">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Contact Us</h1>
+            <p>We're here to help you achieve your perfect smile</p>
+        </div>
+    </section>
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>12 Qershori<br>Ferizaj, Kosovë</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+383 48 600 417</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>royaldentalfr@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Mon-Fri: 9AM-7PM<br>Sat: 10AM-4PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question or want to learn more about our services? Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <h2>Find Us</h2>
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps?q=9592+7Q4,+12+Qershor,+Ferizaj+70000&output=embed"
+                            width="100%"
+                            height="400"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <p>12 Qershori, Ferizaj, Kosovë</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="appointment-section" id="appointment">
+        <div class="container">
+            <h2 class="section-title">Send a Case</h2>
+            <p class="section-subtitle">Schedule a consultation with our expert team</p>
+            <form class="appointment-form" id="appointmentForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="appt-name">Full Name *</label>
+                        <input type="text" id="appt-name" name="appt-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appt-email">Email Address *</label>
+                        <input type="email" id="appt-email" name="appt-email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="appt-phone">Phone Number *</label>
+                        <input type="tel" id="appt-phone" name="appt-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appt-service">Service Interested In *</label>
+                        <select id="appt-service" name="appt-service" required>
+                            <option value="">Select a service</option>
+                            <option value="dental-implants">Dental Implants</option>
+                            <option value="emax">Emax</option>
+                            <option value="zirconia">Zirconia</option>
+                            <option value="aligners">Aligners</option>
+                            <option value="veneers">Veneers</option>
+                            <option value="metal-ceramic">Metal Ceramic</option>
+                            <option value="Total Prosthesis">Total Prosthesis</option>
+                            <option value="Partial Denture">Partial Denture</option>
+                            <option value="Gold Teeth">Gold Teeth</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="appt-color">Color *</label>
+                        <select id="appt-color" name="appt-color" required>
+                            <option value="">Select a color</option>
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="A3">A3</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                            <option value="BL1">BL1</option>
+                            <option value="BL2">BL2</option>
+                            <option value="BL3">BL3</option>
+                            <option value="C1">C1</option>
+                            <option value="C2">C2</option>
+                            <option value="D1">D1</option>
+                            <option value="D2">D2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="appt-shape">Tooth Shapes *</label>
+                        <select id="appt-shape" name="appt-shape" required>
+                            <option value="">Select a Tooth Shapes</option>
+                            <option value="Oval">Oval</option>
+                            <option value="Square">Square</option>
+                            <option value="Tapered">Tapered</option>
+                            <option value="Round">Round</option>
+                            <option value="Quadrangular">Quadrangular</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="appt-date">Preferred Date *</label>
+                        <input type="date" id="appt-date" name="appt-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appt-time">Preferred Time *</label>
+                        <select id="appt-time" name="appt-time" required>
+                            <option value="">Select a time</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="appt-message">Additional Notes</label>
+                    <textarea id="appt-message" name="appt-message" rows="4" placeholder="Any specific requests or information you'd like us to know..."></textarea>
+                </div>
+                <div class="form-group file-upload-group">
+                    <label for="appt-files">Upload Files (Optional)</label>
+                    <p class="file-upload-hint">You can upload 3D scans, photos, X-rays, or other dental files (Max 10MB per file)</p>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="appt-files" name="appt-files" multiple accept="image/*,.stl,.obj,.ply,.dcm,.pdf" class="file-input">
+                        <label for="appt-files" class="file-upload-label">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Choose files or drag and drop</span>
+                        </label>
+                        <div class="file-list" id="fileList"></div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Send a Case</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="royaldental.png" alt="Royal Dental Logo" style="width: 250px; height: auto;">
+                        
+                    </div>
+                    <p>We give you a Royal Smile.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +383 48 600 417 </li>
+                        <li><i class="fas fa-envelope"></i> royaldentalfr.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 12 Qershori Ferizaj Kosovë</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-7PM | Sat: 10AM-4PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Royal Dental. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
