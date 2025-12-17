@@ -332,6 +332,135 @@ a {
     box-shadow: 0 5px 20px rgba(201, 162, 78, 0.5);
 }
 
+.gallery-grid {
+    margin-top: 80px;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover {
+    border-color: var(--gold);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(201, 162, 78, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 30px 20px 20px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.gallery-overlay p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.book-appointment {
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(201, 162, 78, 0.1), rgba(212, 175, 55, 0.1));
+    text-align: center;
+    overflow: hidden;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('zirkonii.jpg') center/cover;
+    opacity: 0.1;
+}
+
+.cta-title {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-cta {
+    background: var(--gold);
+    color: var(--black);
+    padding: 20px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 5px 30px rgba(201, 162, 78, 0.3);
+}
+
+.btn-cta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(201, 162, 78, 0.5);
+    background: var(--gold-alt);
+}
+
 .footer {
     background: var(--black-alt);
     padding: 80px 0 30px;
