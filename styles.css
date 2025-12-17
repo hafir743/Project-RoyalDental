@@ -894,6 +894,9 @@ h1, h2, h3, h4 {
 }
 
 .footer-column p {
+    text-align: right;
+    margin-right: 125px;
+    margin-top: -20px;
     color: var(--text-light);
     line-height: 1.8;
 }

@@ -574,6 +574,9 @@ file-upload-group {
 }
 
 .footer-column p {
+    text-align: right;
+    margin-right: 125px;
+    margin-top: -13px;
     color: var(--text-light);
     line-height: 1.8;
 }

@@ -303,6 +303,9 @@ a {
 }
 
 .footer-column p {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: -13px;
     color: var(--text-light);
     line-height: 1.8;
 }
@@ -310,7 +313,7 @@ a {
 .footer-column h3 {
     color: var(--gold);
     margin-bottom: 20px;
-    font-size: 1.3rem;
+    font-size: 1.3rem; 
 }
 
 .footer-column ul {
