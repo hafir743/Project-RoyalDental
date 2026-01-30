@@ -1,5 +1,6 @@
 <?php
 require_once 'includes/config.php';
+
 $page_title = 'Gallery';
 $custom_css = 'gallery.css';
 include 'includes/header.php';
