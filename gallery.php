@@ -1,6 +1,11 @@
 <?php
 require_once 'includes/config.php';
 
+$db = new Database();
+$connection = $db->getConnection();
+$gallery = new GalleryItem($connection);
+$galleryItems = $gallery->getAll();
+
 $page_title = 'Gallery';
 $custom_css = 'gallery.css';
 include 'includes/header.php';
