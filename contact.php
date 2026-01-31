@@ -1,6 +1,11 @@
 <?php
 require_once 'includes/config.php';
 
+$db = new Database();
+$connection = $db->getConnection();
+$contact = new Contact($connection);
+$appointment = new Appointment($connection);
+
 $contactError = '';
 $contactSuccess = '';
 $appointmentError = '';
